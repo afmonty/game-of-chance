@@ -6,8 +6,9 @@ var whatIsThis = function(a, b) {
 	console.log('a = ', a);
 	console.log('b = ', b);
 };
+window.whatIsThis('hello', 'world');
 
-var inAnObject = {
+/*var inAnObject = {
 	name: 'inAnObject',
 	test1: whatIsThis,
 	anotherObject: {
@@ -55,9 +56,9 @@ var confusing = {
 // started.
 
 // * Problem 1
-// whatIsThis('hello', 'world');
-// * "this" is ...
-// * because ...
+whatIsThis('hello', 'world');
+// * "this" is ... a = hello and b = world when is run with the run with the whatIsThis code above.
+// * because ...hello and world are passed into the function.
 
 
 
@@ -169,7 +170,7 @@ window.whatIsThis('hello', 'world');
 // * Problem 15
 // inAFunction.test3('A', 'B');
 // * "this" is ...
-// * because ...
+// * because ...*/
 
 
 
