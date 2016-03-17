@@ -36,17 +36,18 @@ var result = function getProbabilities(){
 	var roll1 = die.roll();
 	var roll2 = die.roll();
 	var sumroll = roll1 + roll2;
-	console.log(sumroll);
+	//console.log(sumroll);
 	if(sumroll in probs){
-		probs[sum]++;
+		probs[sumroll]++;
 	} else{
-		probs[sum] = 1;
+		probs[sumroll] = 1;
 	  }
 	}
+	//console.log(probs);
 	return probs;
 };
 
-console.log(probs);
+
 console.log(result());
 
 
