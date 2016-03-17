@@ -31,15 +31,22 @@ console.log("You rolled a " +dieRoll);
 //Probabilities
 
 var result = function getProbabilities(){
+	var probs = {};
 	for(var i = 0; i < 1000; i++){
 	var roll1 = die.roll();
 	var roll2 = die.roll();
-	var sumroll = [roll1 + roll2];
+	var sumroll = roll1 + roll2;
 	console.log(sumroll);
+	if(sumroll in probs){
+		probs[sum]++;
+	} else{
+		probs[sum] = 1;
+	  }
 	}
+	return probs;
 };
 
-
+console.log(probs);
 console.log(result());
 
 

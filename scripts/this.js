@@ -1,14 +1,14 @@
 
 /*   Setting up the examples   */
 /*******************************/
-var whatIsThis = function(a, b) {
+/*var whatIsThis = function(a, b) {
 	console.log('This is...', this);
 	console.log('a = ', a);
 	console.log('b = ', b);
 };
-window.whatIsThis('hello', 'world');
+window.whatIsThis('hello', 'world');*/
 
-/*var inAnObject = {
+var inAnObject = {
 	name: 'inAnObject',
 	test1: whatIsThis,
 	anotherObject: {
@@ -16,8 +16,9 @@ window.whatIsThis('hello', 'world');
 		test2: whatIsThis
 	}
 };
+inAnObject.anotherObject.test2('twitter', 'book');
 
-var inAFunction = function(a, b) {
+/*var inAFunction = function(a, b) {
 	this.name = 'Sally';
 	whatIsThis(a, b);
 };
@@ -56,7 +57,7 @@ var confusing = {
 // started.
 
 // * Problem 1
-whatIsThis('hello', 'world');
+//whatIsThis('hello', 'world');
 // * "this" is ... a = hello and b = world when is run with the run with the whatIsThis code above.
 // * because ...hello and world are passed into the function.
 
@@ -64,17 +65,18 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 2
-window.whatIsThis('hello', 'world');
-// * "this" is ...
+//window.whatIsThis('hello', 'world');
+// * "this" is ...  Window {external: Object, chrome: Object, document: document, speechSynthesis: SpeechSynthesis, caches: CacheStorage…}
+//Not sure what 'this' is... I get a a = hello and b = world after this message in my console.
 // * because ...
 
 
 
 
-// * Problem 3
-// inAnObject.test1('face', 'book');
-// * "this" is ...
-// * because ...
+// * Problem 3 // inAnObject.test1('face', 'book'); // * "this" is ... I feel
+//like the result should have been face for test1.  I am getting the error that
+//'what is this'is undefined instead of the value of test1 being changed... I'm
+//not sure why // * because ...
 
 
 
