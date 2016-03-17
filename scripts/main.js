@@ -34,7 +34,7 @@ var result = function getProbabilities(){
 	for(var i = 0; i < 1000; i++){
 	var roll1 = die.roll();
 	var roll2 = die.roll();
-	var sumroll = Array.of(roll1 + roll2);
+	var sumroll = [roll1 + roll2];
 	console.log(sumroll);
 	}
 };
