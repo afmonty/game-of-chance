@@ -6,8 +6,8 @@ function MakeCard() {
 
 	var cardSuit = this.suit[Math.floor(Math.random() * this.suit.length)];
 	var cardNumber = this.num[Math.round(Math.random() * this.suit.length)];
-	console.log('your card is the '+ cardNumber + ' of ' + cardSuit)
-}
+	console.log('your card is the '+ cardNumber + ' of ' + cardSuit);
+};
 
 var card =  new MakeCard();
 //console.log(card);
@@ -16,12 +16,7 @@ var card =  new MakeCard();
 //Constructor for a die.
 
 function MakeDie(){
-	this.side1 = 1;
-	this.side2 = 2;
-	this.side3 = 3;
-	this.side4 = 4;
-	this.side5 = 5;
-	this.side6 = 6;
+	
 	this.roll = function(){
 		return Math.ceil(Math.random() * 6);
 	}
