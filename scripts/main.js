@@ -1,12 +1,17 @@
 //Constructor for Card
 
 function MakeCard() {
-	this.suit = "Ace";
-	this.num = "5";
+	this.suit = ['Spades', 'Hearts', 'Diamonds', 'Clubs'];
+	this.num = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King'];
+
+	var cardSuit = this.suit[Math.floor(Math.random() * this.suit.length)];
+	var cardNumber = this.num[Math.round(Math.random() * this.suit.length)];
+	console.log('your card is the '+ cardNumber + ' of ' + cardSuit)
 }
 
 var card =  new MakeCard();
-console.log(card);
+//console.log(card);
+
 
 //Constructor for a die.
 
